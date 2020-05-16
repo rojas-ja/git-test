@@ -6,6 +6,38 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>This is a git usage test run</h1>
+    <p>Always make sure to open the Working Folder 1st, then right click (On a Windows system,) and select <b> Git Bash Here</b>, inside the open Working Folder. Second: Makes sure to type <b> code . </b>  from the Git Bash window you opened from the Working Folder, you will be working in. This assures that the Working Folder opened will be used by Visual Studio Code to store the project files you create, will be saved inside the Working Folder we opened the Git Bash window from!</p>
+    <p>Testing git for changes on 2nd commit.</p>
+    <p>Type <b> git status </b> to check for any commits on the Working folder.</p>
+    <p>You have to use: <b> git .add</b> --> Every time before you commit.</p>
+    <ol>
+        <li>First check the status of the file / Working Folder to see if there are any commits already in place.</li>
+            <ol><b>git status</b></ol>
+        <li>Second commit command after adding -h1-: git commit -m "First commit"</li>
+            <ol><b>git add .</b></ol>
+        <li>Third commit commands after adding the 1st -paragraph-: Make sure to add commands, in the order provided below.</li>
+            <ol><b>git add .</ol>
+            <ol>git commit -m "Second commit"</b></ol>
+        <li>Fourth step:</li>
+            <ol>Repeat the third step every time you plan to commit a change to git.</ol>
+    <p>- When you need to go back to a previous commit to for whatever reason you may have:</p>
+    <li>Type in the following cmd:</li>
+        <ol><b>git log --oneline</b></ol>
+        <p>- This log will provide us with a log of our individual git entries by the name we gave the commits. Next to each entry name, there will be a hash number to the left of it's name first. Example: 8627be2 First commit. The hash is 8627be2. You will use this hash followed by the file name, instead of the alpha-numeric name entry on alone, to go back to this previous commit with the following cmd. The first example below, is just the command on it's own, the second example is the cmd in use with a hash table with the name of the file included after the hash table name.</p>
+        <li>
+            <ol><b>git checkout</b></ol>
+            <ol><b>git checkout 8627be2 index.html</b></ol>
+        </li>
+        <p>- Use the same cmd above to revert back to the file you were originally working on, or to jump to another commit if it exists. But use the proper hash for the file you wish to jump too. Don't forget to add the file name after the hash!</p>
+        <p>- To jump back to the latest version of your code (In case there many commits... Large projects can have hundreds of commits.) Type the following cmds in the order they are provided:</p>
+        <li>
+            <ol><b>git reset HEAD</b></ol>
+            <p>- Code in use bellow:</p>
+            <ol><b>git reset HEAD index.html</b></ol>
+            <ol><b>git checkout -- index.html</b></ol>
+            <p>Both of the above commands used together, take you back to your latest working code... AKA, your latest  working file!</p>
+        </li>
     
 </body>
 </html>
